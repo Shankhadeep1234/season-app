@@ -18,7 +18,9 @@ class App extends Component {
     } else if (!this.state.errMsg && this.state.lat) {
       return <SeasonDisplay lat={this.state.lat} />;
     } else {
-      return <Spinner msg="Please allow your the app to read your location" />;
+      return (
+        <Spinner msg="Please allow your the our app to read your location" />
+      );
     }
   }
 
