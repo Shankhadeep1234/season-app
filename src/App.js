@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import SeasonDisplay from './components/SeasonDisplay';
-import Spinner from './components/Spinner';
+import React, { Component } from "react";
+import SeasonDisplay from "./components/SeasonDisplay";
+import Spinner from "./components/Spinner";
 
 class App extends Component {
-  state = { lat: null, errMsg: '' };
+  state = { lat: null, errMsg: "" };
 
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
